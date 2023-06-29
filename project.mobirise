@@ -1,0 +1,464 @@
+{
+  "settings": {
+    "name": "ШАБЛОН_1",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "mobirise5",
+      "title": "Mobirise 5",
+      "styling": {
+        "primaryColor": "#6592e6",
+        "secondaryColor": "#ff6666",
+        "successColor": "#40b0bf",
+        "infoColor": "#47b5ed",
+        "warningColor": "#FFE161",
+        "dangerColor": "#ff9966",
+        "mainFont": "Jost",
+        "display1Font": "Jost",
+        "display1Size": 4.6,
+        "display2Font": "Jost",
+        "display2Size": 3,
+        "display5Font": "Jost",
+        "display5Size": 2,
+        "display7Font": "Jost",
+        "display7Size": 1.2,
+        "display4Font": "Jost",
+        "display4Size": 1.1,
+        "isRoundedButtons": false,
+        "isGhostButtonBorder": false,
+        "underlinedLinks": false,
+        "isAnimatedOnScroll": false,
+        "isScrollToTopButton": false
+      }
+    },
+    "path": "@PROJECT_PATH@",
+    "versionFirst": "5.3.0",
+    "siteFonts": [
+      {
+        "css": "'Jost', sans-serif",
+        "name": "Jost",
+        "url": "https://fonts.googleapis.com/css?family=Jost:100,200,300,400,500,600,700,800,900,100i,200i,300i,400i,500i,600i,700i,800i,900i"
+      }
+    ],
+    "uniqCompNum": 16,
+    "versionPublish": "5.8.14",
+    "favicon": false,
+    "mbrsiteDomain": "4r3mal9vrp",
+    "imageResize": false,
+    "robotsSwitcher": false,
+    "sitemapSwitcher": false,
+    "sitemapSwitcherAuto": false,
+    "siteUrl": false,
+    "cookiesAlert": false,
+    "gdpr": false,
+    "screenshot": "screenshot.png"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            }
+          },
+          "_name": "header1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"header1\" group=\"Headers\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"10\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"6\" condition=\"fullScreen == false\">\n\n        <input type=\"range\" inline name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"5\" step=\"1\">\n        <select title=\"Align\" name=\"contentAlign\">\n            <option value selected>Left</option>\n            <option value=\"justify-content-center\">Center</option>\n            <option value=\"justify-content-end\">Right</option>\n        </select>\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubitle\">\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\">\n        <input type=\"checkbox\" title=\"Buttons\" name=\"showButtons\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/matt-vitt-progressive-travel-vitt-yoga-esterilla-1-800x800.png\" selected>\n            <input type=\"color\" title=\"Color\" value=\"#fafafa\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#fafafa\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.1\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div class mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row {{contentAlign}}\">\n            <div class=\"col-12 col-lg-{{textWidth}}\">\n                <h1 class=\"mbr-section-title mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-1\" mbr-if=\"showTitle\"></h1>\n                <h2 class=\"mbr-section-subtitle mbr-fonts-style mb-3\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-2\" mbr-if=\"showSubitle\">\n                        Header Subtitle\n                    </h2>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-7\" mbr-if=\"showText\" data-app-selector=\".mbr-text, .mbr-section-btn\"></p>\n                <div mbr-buttons mbr-theme-style=\"display-4\" class=\"mbr-section-btn mt-3\" mbr-if=\"showButtons\"><a class=\"btn btn-secondary\" href=\"https://mobiri.se\" data-app-placeholder=\"Введите Текст\">Create Website</a></div>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tklPw85qFE",
+          "_anchor": "header1-0",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content5",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">WELCOME TO URBAN YOGA SPA</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Clases con el objetivo de fortalecer, alargar y descontracturar la musculatura  que rodea la columna vertebral y la espalda, además de conseguir un sistema músculo-esquelético libre de tensiones, y conseguir un cuerpo equilibrado que se adapte mejor a las exigencias diarias o de la práctica deportiva sin riesgo de padecer lesiones. \n<br>\n<br>Es una clase con un claro carácter preventivo, aunque las personas que ya padecen alguna de las consecuencias de posturas inadecuadas se pueden ven significativamente beneficiadas y aliviadas con la práctica de esta clase, tanto si tienes dolor o molestias, como si quieres evitarlas.\n<br>\n<br>Escuela para la prevención y terapia de la espalda. Una verdadera escuela de buenos hábitos posturales y correcta ergonomía. Divertida y sobre todo didáctica.<br>The event will have rooms for all levels, with introductory sessions to Yoga, traditional Hatha Yoga, Hatha Raja, Vinyasa, Iyengar, Dharma, Ashtanga, Rocket, Yin Yoga, Restorative, Jivamukti, Forrest, Prana Nidra, Yoga Nidra, Dharma Wheel, Acro Yoga, Thai Massage, etc.\n<br>\n<br>With an Integral Yoga concept that will include asana, Yoga Nidra, Pranayama and Meditation classes, as well as conferences on philosophy, nutrition and Bhakti Yoga and Kirtan sessions.<br><br></p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tklPBJoPTj",
+          "_anchor": "content5-2",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor",
+            "blockquote": {
+              "border-color": "@lineColor",
+              "border-radius": "4px",
+              "background-color": "@cardColor"
+            }
+          },
+          "_name": "content7",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"content7\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <input type=\"color\" name=\"lineColor\" title=\"Line Color\" value=\"#6592e6\">\n        <input type=\"color\" name=\"cardColor\" title=\"Color\" value=\"#fafafa\">\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-12 col-md-{{textWidth}}\">\n                <blockquote>\n                <h5 class=\"mbr-section-title mbr-fonts-style mb-2\" mbr-theme-style=\"display-7\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\"><b>Entrenamientos con el peso corporal</b></h5>\n                <p class=\"mbr-text mbr-fonts-style\" mbr-theme-style=\"display-4\" data-app-selector=\".mbr-text\">Yes, we have both! And you don’t have to choose one or the other.  Supplementing your regular classes with Online ones or vice versa is a perfect way to make the most out of your time and practice. Most of our card passes include Unlimited Online classes and or for only 29€ a month all you can zoom. And all classes are simultaneous to our in house classes so lots of options, attention and fun.DANCE &amp; YOGA HOLIDAYS\n<br>7 nights in the hostel (shared room)\n<br> 5 dance classes - reggaeton, latin ladies, ladies sytling\n<br> 2 Sun Vinyasa yoga classes (dynamic)\n<br> 1 Candlelight aromatherapy yoga class\n<br> 2 Moon Vinyasa yoga classes (restorative)\n<br> yoga mats and props\n<br> 1 excursion to the volcanic area of Las Palmas\n<br> 1 guided tour of the colonial style old town\n<br> 1 live music town\n<br> 175€ EXTRA &gt; Private room at the hostel\n<br> 🙂 EXTRA &gt; Apartment (depends on availability)\n<br> 🙂 EXTRA &gt; Hotel 3*** (depends on availability)<br>SURF &amp; YOGA HOLIDAYS\n<br>7 nights in the hostel (shared room)\n<br> 5 surf classes\n<br> surf gear during the classes\n<br> 2 Sun Vinyasa yoga classes (dynamic)\n<br> 1 Candlelight aromatherapy yoga class\n<br> 2 Moon Vinyasa yoga classes (restorative)\n<br> 1 Yoga Lab (questions and answers)\n<br> yoga mats and props\n<br> 1 excursion to the volcanic area of Las Palmas\n<br> 1 guided tour of the colonial style old town\n<br> 1 live music town\n<br> 175€ EXTRA &gt; Private room at the hostel\n<br> 🙂 EXTRA &gt; Apartment (depends on availability)\n<br> 🙂 EXTRA &gt; Hotel 3*** (depends on availability)\n<br>575€<br>\nSEE YOGA HOLIDAYS\n<br>7 nights in the hostel (shared room)\n<br> 1 morning meditation at the beach\n<br> 3 Sun Vinyasa yoga classes (dynamic)\n<br> 1 Candlelight aromatherapy yoga class\n<br> 2 Moon Vinyasa yoga classes (restorative)\n<br> 1 Yoga Lab (questions and answers)\n<br> yoga mats and props\n<br> 1 excursion to the volcanic area of Las Palmas\n<br> 1 guided tour of the colonial style old town\n<br> 1 live music town\n<br> 175€ EXTRA &gt; Private room at the hostel\n<br> 🙂 EXTRA &gt; Apartment (depends on availability)\n<br> 🙂 EXTRA &gt; Hotel 3*** (depends on availability)\n<br>475€\n<br>\n<br></p></blockquote>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tklXhlO52J",
+          "_anchor": "content7-b",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "& when not (@fullScreen)": {
+              "padding-top": "(@paddingTop * 1rem)",
+              "padding-bottom": "(@paddingBottom * 1rem)"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".mbr-text, .mbr-section-btn": {
+              "color": "#232323"
+            },
+            ".btn": {
+              "width": "100%"
+            },
+            ".mbr-section-btn": {
+              "margin-bottom": "1.2rem"
+            }
+          },
+          "_name": "form1",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"form1\" group=\"Forms\" data-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" mbr-class=\"{\n    'mbr-fullscreen': fullScreen,\n    'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Screen\" name=\"fullScreen\" checked>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\" condition=\"fullScreen == false\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\" checked>\n        <input type=\"checkbox\" title=\"Text\" name=\"showText\" checked>\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"@PROJECT_PATH@/assets/images/cl-bikram-238.jpg\" parallax selected>\n            <input type=\"color\" title=\"Color\" value=\"#ffffff\">\n            <input type=\"video\" title=\"Video\" value=\"https://vimeo.com/428046504\">\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#ffffff\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.5\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n    <div class=\"align-center\" mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div mbr-form class=\"col-lg-8 mx-auto mbr-form\">\n                <form action name=\"Form Name\" method=\"POST\" class=\"mbr-form form-with-styler\">\n                    <div class=\"row\">\n                        <div hidden=\"hidden\" data-form-alert class=\"alert alert-success col-12\">Thanks for filling\n                            out the form!</div>\n                        <div hidden=\"hidden\" data-form-alert-danger class=\"alert alert-danger col-12\">Oops...! some\n                            problem!</div>\n                    </div>\n                    <div class=\"dragArea row\">\n                        <div class=\"col-12\" mbr-if=\"showTitle\">\n                            <h1 class=\"mbr-section-title mb-4\" mbr-theme-style=\"display-2\"><b>Donations</b></h1>\n                        </div>\n                        <div class=\"col-12\">\n                            <p mbr-theme-style=\"display-7\" class=\"mbr-text mbr-fonts-style mb-5\" mbr-if=\"showText\">When you make a purchase at Vitt, 5% of the profits from your purchase are used to carry out rescue efforts in the Mediterranean. As you can see, helping the most disadvantaged is much easier than it may seem. A gesture as simple as buying one of our products is full of advantages: you enjoy practicing yoga with a quality product and you indirectly contribute to saving lives.</p>\n                        </div>\n                        <div class=\"col-md col-12 form-group mb-3\" data-for=\"name\">\n                            <input type=\"text\" name=\"name\" placeholder=\"Name\" data-form-field=\"Name\" class=\"form-control\">\n                        </div>\n                        <div class=\"col-md col-12 form-group mb-3\" data-for=\"email\">\n                            <input type=\"email\" name=\"email\" placeholder=\"Email\" data-form-field=\"Email\" class=\"form-control\">\n                        </div>\n                        <div class=\"mbr-section-btn col-12 col-md-auto\" mbr-buttons=\"true\" mbr-theme-style=\"display-4\" data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\">\n                            <a data-toolbar=\"-mbrBtnMove,-mbrLink,-mbrBtnRemove,-mbrBtnAdd\" type=\"submit\" class=\"btn btn-primary\">Subscribe</a>\n                        </div>\n                    </div>\n                </form>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tklPIni5O7",
+          "_anchor": "form1-3",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".row-links": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".social-row": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".media-container-row": {
+              "flex-direction": "column",
+              "justify-content": "center",
+              "align-items": "center",
+              ".foot-menu": {
+                "list-style": "none",
+                "display": "flex",
+                "justify-content": "center",
+                "flex-wrap": "wrap",
+                "padding": "0",
+                "margin-bottom": "0",
+                "li": {
+                  "padding": "0 1rem 1rem 1rem",
+                  "p": {
+                    "margin": "0"
+                  }
+                }
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.5rem",
+                  "color": "#ffffff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center"
+                }
+              },
+              ".row-copirayt": {
+                "word-break": "break-word",
+                "width": "100%",
+                "p": {
+                  "width": "100%"
+                }
+              }
+            }
+          },
+          "_name": "footer3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer3\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"range\" inline title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Social Items\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\">Buy your ticket now</li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"page3.html\" class=\"text-primary\">Política de Privacidad&nbsp;</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"page2.html\" class=\"text-primary\">Términos y condiciones de venta</a></li>\n                    \n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Copyright 2025&nbsp; All Rights Reserved.\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tklV7HSAAT",
+          "_anchor": "footer3-8",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    },
+    "page2.html": {
+      "settings": {
+        "title": "Términos y condiciones de venta",
+        "order": 3
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content5",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">SALES TERMS &amp; CONDITIONS\n<div><br></div></h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">*Updated April 1, 2022\n<br>PLEASE REVIEW THESE SALES TERMS &amp; CONDITIONS BEFORE COMPLETING A PURCHASE FOR A PRODUCT(S) FROM A ZUMBA WEAR EUROPE WEBSITE OR MOBILE VERSION OR APPLICATION THEREOF (COLLECTIVELY, THE \"WEBSITE\"). THESE ARE THE TERMS AND CONDITIONS THAT APPLY TO YOUR PURCHASE OF ANY AND ALL PRODUCTS FROM THE WEBSITES INCLUDING, BUT NOT LIMITED TO, DVDS, CDS, CLOTHING, VIDEO GAMES, SHOES, ACCESSORIES, FITNESS EQUIPMENT, AND GIFT CARDS (COLLECTIVELY, THE \"MERCHANDISE\"). YOU HEREBY AGREE TO THESE SALES TERMS AND CONDITIONS BY COMPLETING A PURCHASE OF MERCHANDISE, WHICH AS A PART OF SUCH PROCESS SHALL INCLUDE THE SELECTION OF A METHOD OF PAYMENT, AND YOUR ENTRY OF YOUR PAYMENT METHOD INFORMATION. IN CONNECTION WITH THE FOREGOING, YOU HEREBY AUTHORIZE ZUMBA WEAR EUROPE LTD TO CHARGE THE SELECTED PAYMENT METHOD AND ITS ASSOCIATED PAYMENT ACCOUNT THAT YOU HAVE SPECIFIED FOR THE PURCHASE OF MERCHANDISE.\n<br>\n<br>\n<br>LEGAL AGE AND OTHER REQUIREMENTS\n<br>By completing a purchase of Merchandise through the Websites, you represent that you are at least the legal age of majority in the country in which you reside or are legally authorized, with any necessary consent of a parent or guardian, to agree to these Sales Terms and Conditions and fulfill any obligations in connection with such purchase. Zumba Wear Europe Ltd reserves the right to verify the foregoing. At the time of delivery, any shipment containing Merchandise may require the signature of an adult possessing valid picture identification issued by a government agency.\n<br>You guarantee that all of the information you provide to us in connection with the order, including your name, physical address and email address, is accurate and complete.\n<br>\n<br>\n<br>MERCHANDISE ORDERS\n<br>The following applies to all types of Merchandise. You agree that your order to purchase Merchandise on the Website is an offer to purchase the Merchandise listed in your order. While we want everyone to be able to enjoy our Merchandise, we may, in our sole discretion, not accept an order or limit or cancel quantities purchased per person, per household or per order. We are entitled to verify an order in advance at all times and/or to refuse to accept an order without providing reasons and with no liability to you or any third parties. We may choose not to accept your order at our own discretion. Some reasons of when we may not accept your order include, but are not limited to, the following:\n<br>\n<br>Orders that, in our sole discretion, appear to be placed by dealers, resellers or distributors.\n<br>Orders that appear to be shipped to a freight forwarding company for reshipment.\n<br>Orders that are in violation of the ZIN™ License Agreement.\n<br>Orders that cannot be processed as a result of incorrect or invalid billing, shipping or payment information. Be sure to double-check your information when placing an order. We cannot process orders for several reasons including, but not limited to:\n<br>\n<br>a) Incorrect credit or debit card information such as card number, expiration date and card security value;\n<br>b) Incorrect payment method billing information (billing information provided must be the same as what your financial  institution has on record); and/or\n<br>c)Insufficient or incorrect shipping address such as street address, city, state/province, ZIP or postal code.\n<br> \n<br>Orders, in our sole discretion, that we suspect to be fraudulent. We reserve the right to cancel or not accept any order that we suspect to have been placed as a result of fraudulent activity. We further reserve the right to cancel or not accept subsequent orders from customers with a previous fraudulent order history.\n<br>Orders connected to previous credit card disputes.\n<br>If Merchandise is shown on the Website but is no longer available or if Merchandise shown on the Website contains an error (such as it is incorrectly priced or otherwise incorrectly described).\n<br>We fully reserve the right to refuse to accept any order that we know or reasonably suspect was made with the assistance or involvement of any software, robot, crawler, spider or other automated means or device.\n<br>\n<br>In the event we do not accept all or a portion of your order we shall be entitled to cancel all or a portion of your order without incurring any liability towards you or any third party. Following the cancellation we will provide you with a refund for the amount paid to us under the cancelled portion of the order.\n<br>\n<br>If your order has been processed and shipped, you may return the Merchandise you ordered pursuant to the terms of our applicable return policy for the European Union.\n<br>\n<br>Minor differences in color and other variations in Merchandise are possible as a result of different image acquisition, display technologies or other technical reasons. Zumba Wear Europe Ltd is not liable for these variations and deviations. No rights can be derived from typing errors, product descriptions or manifest errors on the Website.\n<br>\n<br>PAYMENTS\n<br>Zumba Wear Europe Ltd offers several methods of payment for you to purchase Merchandise including, but not limited to, credit cards, debit cards, and PayPal. Some methods of payment are only available in certain countries.\n<br>\n<br>\n<br>PAYMENTS BY CREDIT CARDS AND DEBIT CARDS\n<br>Credit and debit cards make purchasing Merchandise easy. However, there are times when people may use the credit or debit card payment information of others without authorization. As a result, Zumba Wear Europe Ltd reserves the right to request additional evidence or proof of billing information or other information associated with the credit or debit card account used to purchase Merchandise from any of the Websites. In the event that the requested evidence or proof is not provided or is insufficient, we reserve the right to refuse to accept the order. If you believe your credit or debit card might have been used in a fraudulent manner to purchase Merchandise, please contact our Customer Care Department.\n<br>\n<br>\n<br>PAYMENTS BY PAYPAL\n<br>PayPal™ is an alternate method for purchasing Merchandise on the Websites. It enables any individual or business with an email address to securely send payments online. With a PayPal account, you can choose to pay with your credit card, debit card, bank account, or PayPal account balance for any purchase you make. Your credit card and bank numbers are never seen by Zumba Wear Europe Ltd.\n<br>\n<br>PAYPAL PROCESS\n<br>If you select PayPal as your payment option, you will continue through the standard checkout process then automatically proceed to PayPal.com to complete your payment.\n<br>\n<br>Once you have been redirected to paypal.com, you will have 25 minutes to complete the payment before your order is cancelled.\n<br>For more information, including any available protections offered by PayPal for unauthorized payments, visit the PayPal Help Center. Sign up for PayPal now.\n<br>\n<br>TAXES, SHIPPING/HANDLING, AND INVOICING\n<br>All pricing set forth on the Websites is exclusive of applicable taxes (e.g., VAT) and shipping and handling charges. All orders are subject to any applicable taxes (e.g., VAT) on the purchase or delivery of the Merchandise and applicable shipping and handling charges.\n<br>Where we elect, or are required by applicable law, to issue or make available an invoice, we reserve the right to issue or make available electronic invoices and you agree to such form of invoicing. Accordingly, you expressly agree that upon completing a purchase of Merchandise on the Website, a VAT invoice will be sent to you in the form of a shipping confirmation email (to the email address you provided in your order). In the event you wish to receive a paper invoice, you can contact our Customer Care Department to request one.\n<br>\n<br>DISCOUNTS AND PROMOTIONS.\n<br>Any coupon or promotional code for a discount off of the price of any Merchandise must be used at the time you pay for your Merchandise. Coupon and promotional codes are subject to their terms and conditions and are NOT applicable to payments made for Merchandise already purchased. Any applicable discounts or promotional prices will be noted at the time of purchase on the checkout page for your order.\n<br>\n<br>LIMITATION OF LIABILITY\n<br>TO THE MAXIMUM EXTENT PERMITTED BY APPLICABLE LAW, ZUMBA WEAR EUROPE LTD AND ITS AFFILIATES DO NOT ACCEPT OR ASSUME LIABILITY FOR YOUR USE OF ANY MERCHANDISE PURCHASED ON THE WEBSITES. FURTHER, IN NO EVENT WILL ZUMBA WEAR EUROPE LTD OR ITS OFFICERS, DIRECTORS, MEMBERS, SUBSIDIARIES, AFFILIATES, EMPLOYEES, OR AGENTS BE LIABLE TO ANY PARTY FOR INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL OR PUNITIVE DAMAGES RELATING TO A SALE OF MERCHANDISE EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGES, OR FOR ANY CLAIM BY ANY THIRD PARTY. ZUMBA WEAR EUROPE LTD AND ITS AFFILIATES’ MAXIMUM LIABILITY FOR THE PURCHASE OF THE MERCHANDISE SHALL NOT EXCEED THE AMOUNT PAID FOR SUCH MERCHANDISE. IN SOME JURISDICTIONS, THE FOREGOING LIMITATIONS OF LIABILITY MAY NOT FULLY APPLY. ACCORDINGLY, IN SUCH JURISDICTIONS, THE FOREGOING LIMITATIONS SHALL APPLY TO THE MAXIMUM EXTENT PERMITTED BY LAW.\n<br>\n<br>DISCLAIMER OF WARRANTIES\n<br>EXCEPT AS OTHERWISE EXPRESSLY PROVIDED BY ZUMBA WEAR EUROPE LTD, ZUMBA WEAR EUROPE LTD AND ITS AFFILIATES MAKE NO OTHER WARRANTY OF ANY KIND REGARDING THE MERCHANDISE AVAILABLE FOR SALE ON THE WEBSITES. ALL MERCHANDISE IS OTHERWISE PROVIDED ON AN \"AS IS\" AND \"AS AVAILABLE\" BASIS. IN PARTICULAR, TO THE MAXIMUM EXTENT PERMISSIBLE BY LAW, ZUMBA WEAR EUROPE LTD AND ITS AFFILIATES EXPRESSLY DISCLAIM ALL WARRANTIES, INCLUDING IMPLIED WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, NON-INFRINGEMENT, AND THOSE ARISING BY STATUTE OR OTHERWISE IN LAW OR FROM A COURSE OF DEALING OR USAGE OF TRADE.\n<br>\n<br>\n<br>DATA PROTECTION AND ADDITIONAL TERMS AND CONDITIONS\n<br>We fully respect the privacy of individuals who access and use the Website. For details on the manner in which we use cookies, the type of information we collect, how and for what purpose we use your information and under what circumstances we disclose information please see our Website Terms of Use and Privacy Policy, which are incorporated into and form part of these Sales Terms and Conditions. By placing an order for Merchandise on the Websites you agree and understand that we may collect, use, store and process your personal data in accordance with our Privacy Policy.\n<br>\n<br>\n<br>GOVERNING LAW\n<br>Zumba Wear Europe Ltd is located, and controls the Websites, from its offices within Bulgaria (In the state of Varna). If you are making a purchase in Europe, you are making a purchase from Zumba Wear Europe Ltd, and the transaction is governed by the laws of Bulgaria. These Sale Terms and Conditions are not enforceable by any party except for Zumba Wear Europe Ltd and its customers. If any provision of these Sale Terms and Conditions is found not to be enforceable, that term will be deleted and all other terms will remain.</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tklUha8cba",
+          "_anchor": "content5-7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".row-links": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".social-row": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".media-container-row": {
+              "flex-direction": "column",
+              "justify-content": "center",
+              "align-items": "center",
+              ".foot-menu": {
+                "list-style": "none",
+                "display": "flex",
+                "justify-content": "center",
+                "flex-wrap": "wrap",
+                "padding": "0",
+                "margin-bottom": "0",
+                "li": {
+                  "padding": "0 1rem 1rem 1rem",
+                  "p": {
+                    "margin": "0"
+                  }
+                }
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.5rem",
+                  "color": "#ffffff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center"
+                }
+              },
+              ".row-copirayt": {
+                "word-break": "break-word",
+                "width": "100%",
+                "p": {
+                  "width": "100%"
+                }
+              }
+            }
+          },
+          "_name": "footer3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer3\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"range\" inline title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Social Items\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\">Buy your ticket now</li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"page3.html\" class=\"text-primary\">Política de Privacidad&nbsp;</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"page2.html\" class=\"text-primary\">Términos y condiciones de venta</a></li>\n                    \n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Copyright 2025&nbsp; All Rights Reserved.\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tklV7HSAAT",
+          "_anchor": "footer3-8",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    },
+    "page3.html": {
+      "settings": {
+        "title": "Política de Privacidad",
+        "order": 2
+      },
+      "components": [
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "background-color": "@bgColor"
+          },
+          "_name": "content5",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section class=\"content5\" group=\"Content\">\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"10\" step=\"1\" value=\"5\">\n        <input type=\"range\" name=\"textWidth\" title=\"Width\" min=\"4\" max=\"12\" value=\"10\" step=\"1\">\n        <header>Show/Hide</header>\n        <input type=\"checkbox\" title=\"Title\" name=\"showTitle\">\n        <input type=\"checkbox\" title=\"Subtitle\" name=\"showSubtitle\" checked>\n        <header>Background</header>\n        <input type=\"color\" title=\"Color\" name=\"bgColor\" value=\"#ffffff\">\n    </mbr-parameters>\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"row justify-content-center\">\n            <div class=\"col-md-12 col-lg-{{textWidth}}\">\n                <h3 class=\"mbr-section-title mbr-fonts-style mb-4\" mbr-if=\"showTitle\" data-app-selector=\".mbr-section-title\" mbr-theme-style=\"display-2\">\n                    <b>Article Title</b>\n                </h3>\n                <h4 class=\"mbr-section-subtitle mbr-fonts-style mb-4\" mbr-if=\"showSubtitle\" data-app-selector=\".mbr-section-subtitle\" mbr-theme-style=\"display-5\">Política de Privacidad</h4>\n                <p class=\"mbr-text mbr-fonts-style\" data-app-selector=\".mbr-text\" mbr-theme-style=\"display-7\">Política de privacidad\n<br>\n<br>Si estás aquí es porque te preocupa que cumpla con la política de privacidad y de protección de datos en mi web. Te invito a leer esta política de privacidad en su totalidad.\n<br>\n<br>Recomendación previa\n<br>\n<br>En esta web se respetan y cuidan los datos personales de los usuarios. Como usuario debes saber que tus derechos están garantizados. Me he esforzado en crear un espacio seguro y confiable.\n<br>\n<br>Es preciso advertir que esta Política de Privacidad podría variar en función de exigencias legislativas o de autorregulación, por lo que se aconseja a los usuarios que la visiten periódicamente Será aplicable en caso de que los usuarios decidan rellenar algún formulario de cualquiera de sus formularios de contacto donde se recaben datos de carácter personal.\n<br>\n<br>Manel Valcarce ha adecuado esta web a las exigencias de la LOPD (Ley Orgánica de Protección de Datos) y a la LSSI-CE (Ley de la Sociedad de la información y el Comercio Electrónico).\n<br>\n<br>Regulaciones legales que cumple esta Política de Privacidad\n<br>\n<br>Manel Valcarce ha adecuado esta web a las exigencias de:\n<br>\n<br>El RGPD (Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo de 27 de abril de 2016 relativo a la protección de las personas físicas), que es la nueva normativa de la Unión Europea que unifica la regulación del tratamiento de los datos personales en los distintos países de la UE.\n<br>\n<br>La LOPD (Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal y Real Decreto 1720/2007, de 21 de diciembre, conocido como el Reglamento de desarrollo de la LOPD), que regula el tratamiento de los datos personales y las obligaciones que debemos asumir los responsables de una web o un blog a la hora de gestionar esta información.\n<br>\n<br>La LSSI o LSSICE (Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y Comercio Electrónico), que regula las transacciones económicas mediante medios electrónicos, como es el caso de esta web.\n<br> \n<br>Envío y registro de datos de carácter personal\n<br>\n<br>A efectos de lo previsto en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal, Manel Valcarce, con NIF: 43738166D, informa al Usuario de que es titular de un fichero de datos de carácter personal inscrito ante el R.G.P.D. (Registro General de Protección de Datos), en los que sus datos quedan incorporados y son tratados con el fin de prestarte los servicios solicitados y enviarte la información acerca de servicios y productos que puedan ser te tu interés.\n<br>\n<br>El envío de datos de carácter personal es obligatorio para contactar y realizar operaciones comerciales con Manel Valcarce.\n<br>\n<br>Asimismo, el no facilitar los datos personales solicitados o el no aceptar la presente política de protección de datos supone la imposibilidad de procesar las solicitudes realizadas en esta web.\n<br>\n<br>Los datos personales que recoge y almacena esta web están detallados en el Aviso Legal.\n<br>\n<br>Información personal que recoge ésta web\n<br>\n<br>Cuando un usuario se conecta con esta web para comentar un post, mandar un correo al titular, publicar en el blog o suscribirse, realizar alguna contratación de servicios o formación, está facilitando información de carácter personal de la que es responsable Manel Valcarce.\n<br>\n<br>Esa información puede incluir tu dirección IP, nombre, dirección física, dirección de correo electrónico, número de teléfono, información de pago y otra información demográfica. Al facilitar esta información, el usuario da su consentimiento para que su información sea recopilada, utilizada, gestionada, y almacenados por Manel Valcarce, sólo como se describe en el Aviso Legal y la presente Política de Privacidad.\n<br>\n<br>Servicios de terceros que utilizo en esta web\n<br>Hosting: Valte SL, empresa que me proporciona protocolos SSL para que tus datos permanezcan a salvo de los hackers o de otra persona que intente robar esa información. Consulta aquí su política de privacidad.\n<br>Plataforma web: Apptivar.me.\n<br>Proveedor de Email Marketing: Mailrelay.\n<br>Google Analytics.\n<br>\n<br>Los usuarios podrán darse de baja en cualquier momento de los servicios prestados por manelvalcarce.com en la misma Newsletter.\n<br>\n<br>En cumplimiento de la normativa vigente sobre protección de datos de carácter personal, tanto al suscribirse a este blog como al realizar algún comentario en cualquiera de sus páginas y/o entradas, el usuario consiente:\n<br>\n<br>El tratamiento de sus datos personales en el entorno de apptivar.me conforme a sus políticas de privacidad.\n<br>El acceso de Manel Valcarce a los datos que, de acuerdo con la infraestructura de apptivar.me, necesite el usuario aportar bien para la suscripción al blog bien para realizar y/o recibir comentarios en el mismo.\n<br>De acuerdo a lo establecido en la Ley Orgánica 15/1999, de 13 de diciembre, de Protección de Datos de Carácter Personal, los datos personales que el usuario envíe a través de esta web serán incorporados a un Fichero de USUARIOS DE LA WEB titularidad de Manel Valcarce y con domicilio en C/ Virgen del Castañar, 18. 28027 MADRID (ESPAÑA). Estos ficheros tienen implementadas todas las medidas técnicas y organizativas de seguridad establecidas en el Real Decreto 1720/2007, de desarrollo de la LOPD.\n<br>\n<br>Manel Valcarce no vende, alquila ni cede datos de carácter personal que puedan identificar al usuario, ni lo hará en el futuro, a terceros sin el consentimiento previo. Sin embargo, en algunos casos se pueden realizar colaboraciones con otros profesionales para organizar formaciones o realizar servicios, en esos casos, se requerirá consentimiento a los usuarios informando sobre la identidad del colaborador y la finalidad de la colaboración. Siempre se realizará con los más estrictos estándares de seguridad.\n<br>\n<br>Exactitud y veracidad de los datos\n<br>\n<br>El usuario es el único responsable de la veracidad y corrección de los datos que remita a manelvalcarce.com exonerando al Prestador de cualquier responsabilidad al respecto. Los usuarios garantizan y responden, en cualquier caso, de la exactitud, vigencia y autenticidad de los datos personales facilitados, y se comprometen a mantenerlos debidamente actualizados. El usuario acepta proporcionar información completa y correcta en el formulario de contacto o suscripción.\n<br>\n<br>Ejercicio de los derechos de acceso, rectificación, cancelación u oposición\n<br>Los derechos de los Usuarios son los siguientes:\n<br>\n<br>Derecho a preguntar qué datos personales almacenamos sobre el Usuario en cualquier momento.\n<br>Derecho a pedirnos que actualicemos o corrijamos de forma gratuita datos incorrectos o desfasados que almacenemos sobre el Usuario.\n<br>Derecho a darse de baja de cualquier comunicación de marketing que podamos enviarle al Usuario.\n<br>El usuario podrá dirigir sus comunicaciones y ejercitar los derechos de acceso, rectificación, cancelación y oposición a través de correo postal a C/ Virgen del Castañar, 18. 28027 MADRID (ESPAÑA), o al correo electrónico, ver contacto, junto con prueba válida en derecho, como fotocopia del D.N.I. o equivalente, indicando en el asunto “PROTECCIÓN DE DATOS”.\n<br>\n<br>Aceptación y consentimiento\n<br>El Usuario declara haber sido informado de las condiciones sobre protección de datos de carácter personal, aceptando y consintiendo el tratamiento de los mismos por parte de Manel Valcarce en la forma y para las finalidades indicadas en el aviso legal.\n<br>\n<br>Cambios en la presente política de privacidad\n<br>Manel Valcarce se reserva el derecho a modificar la presente política para adaptarla a novedades legislativas o jurisprudenciales así como a prácticas de la industria. En dichos supuestos, el Prestador anunciará en esta página los cambios introducidos con razonable antelación a su puesta en práctica.\n<br>\n<br>Correos comerciales\n<br>De acuerdo con la LSSICE, manelvalcarce.com no realiza prácticas de SPAM, por lo que no envía correos comerciales por vía electrónica que no hayan sido previamente solicitados o autorizados por el Usuario. En consecuencia, en cada uno de los formularios habidos en la Página Web, el Usuario tiene la posibilidad de dar su consentimiento expreso para recibir el boletín, con independencia de la información comercial puntualmente solicitada.\n<br>\n<br>Te agradezco el tiempo dedicado a leer esta Política de Privacidad. Ante cualquier duda, puedes contactar conmigo en: ver contacto.\n<br>La Política de Privacidad ha sido actualizada por última vez el 26-11-2019.</p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tklWrSvGlW",
+          "_anchor": "content5-9",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {}
+        },
+        {
+          "alias": false,
+          "_styles": {
+            "padding-top": "(@paddingTop * 1rem)",
+            "padding-bottom": "(@paddingBottom * 1rem)",
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            ".row-links": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".social-row": {
+              "width": "100%",
+              "justify-content": "center"
+            },
+            ".media-container-row": {
+              "flex-direction": "column",
+              "justify-content": "center",
+              "align-items": "center",
+              ".foot-menu": {
+                "list-style": "none",
+                "display": "flex",
+                "justify-content": "center",
+                "flex-wrap": "wrap",
+                "padding": "0",
+                "margin-bottom": "0",
+                "li": {
+                  "padding": "0 1rem 1rem 1rem",
+                  "p": {
+                    "margin": "0"
+                  }
+                }
+              },
+              ".social-list": {
+                "padding-left": "0",
+                "margin-bottom": "0",
+                "list-style": "none",
+                "display": "flex",
+                "flex-wrap": "wrap",
+                "justify-content": "flex-end",
+                ".mbr-iconfont-social": {
+                  "font-size": "1.5rem",
+                  "color": "#ffffff"
+                },
+                ".soc-item": {
+                  "margin": "0 .5rem"
+                },
+                "a": {
+                  "margin": "0",
+                  "opacity": ".5",
+                  "transition": ".2s linear",
+                  "&:hover": {
+                    "opacity": "1"
+                  }
+                },
+                "@media (max-width: 767px)": {
+                  "-webkit-justify-content": "center",
+                  "justify-content": "center"
+                }
+              },
+              ".row-copirayt": {
+                "word-break": "break-word",
+                "width": "100%",
+                "p": {
+                  "width": "100%"
+                }
+              }
+            }
+          },
+          "_name": "footer3",
+          "_sourceTheme": "mobirise5",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"footer3\" group=\"Footers\" global once=\"footers\" mbr-class=\"{'mbr-reveal': reveal, 'mbr-parallax-background': bg.parallax}\">\n\n    <mbr-parameters>\n        <header>Size</header>\n        <input type=\"checkbox\" title=\"Full Width\" name=\"fullWidth\">\n        <input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"2\">\n        <header>Show/Hide</header>\n        <input type=\"range\" inline title=\"Menu Items\" name=\"menuItems\" min=\"0\" max=\"10\" step=\"1\" value=\"3\">\n        <input type=\"range\" inline title=\"Social Items\" name=\"socialItems\" min=\"0\" max=\"10\" step=\"1\" value=\"0\">\n        <input type=\"checkbox\" title=\"Reveal effect\" name=\"reveal\">\n        <header>Background</header>\n        <fieldset type=\"background\" name=\"bg\" parallax>\n            <input type=\"image\" title=\"Image\" value=\"../_images/background8.jpg\">\n            <input type=\"color\" title=\"Color\" value=\"#232323\" selected>\n        </fieldset>\n        <input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n        <input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#232323\" condition=\"overlay && bg.type !== 'color'\">\n        <input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.8\" condition=\"overlay && bg.type !== 'color'\">\n    </mbr-parameters>\n\n    <div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type !== 'color'\" opacity=\"{{overlayOpacity}}\" bg-color=\"{{overlayColor}}\"></div>\n\n    <div mbr-class=\"{'container': !fullWidth, 'container-fluid': fullWidth}\">\n        <div class=\"media-container-row align-center mbr-white\">\n            <div class=\"row row-links\" mbr-if=\"menuItems > 0\">\n                <ul class=\"foot-menu\" mbr-list mbr-list-grow=\"menuItems\">\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\">Buy your ticket now</li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"page3.html\" class=\"text-primary\">Política de Privacidad&nbsp;</a></li>\n                    <li mbr-text class=\"foot-menu-item mbr-fonts-style\" mbr-theme-style=\"display-7\" data-app-selector=\"foot-menu-item\"><a href=\"page2.html\" class=\"text-primary\">Términos y condiciones de venta</a></li>\n                    \n                    \n                </ul>\n            </div>\n            <div class=\"row social-row\" mbr-if=\"socialItems > 0\">\n                <div mbr-list mbr-list-grow=\"socialItems\" class=\"social-list align-right pb-2\">\n                    <div class=\"soc-item\">\n                        <a href=\"https://twitter.com/mobirise\" target=\"_blank\">\n                            <span mbr-icon class=\"socicon-twitter socicon mbr-iconfont mbr-iconfont-social\"></span>\n                        </a>\n                    </div>\n                    \n                    \n                    \n                    \n                    \n                </div>\n            </div>\n            <div class=\"row row-copirayt\">\n                <p class=\"mbr-text mb-0 mbr-fonts-style mbr-white align-center\" mbr-theme-style=\"display-7\" data-app-selector=\".media-container-row .mbr-text\">\n                    © Copyright 2025&nbsp; All Rights Reserved.\n                </p>\n            </div>\n        </div>\n    </div>\n</section>",
+          "_cid": "tklWrSJazl",
+          "_anchor": "footer3-a",
+          "_protectedParams": [],
+          "_global": true,
+          "_once": "footers",
+          "_params": {}
+        }
+      ]
+    }
+  }
+}
